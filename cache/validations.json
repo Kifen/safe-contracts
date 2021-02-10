@@ -1,0 +1,886 @@
+{
+  "version": "3",
+  "log": [
+    {
+      "MockContract": {
+        "version": {
+          "withMetadata": "4c29719554bada46d488b175fba8b6d617e46551c5c92c1d1f8baf419c33638f",
+          "withoutMetadata": "8c14eff1cadb58b2d181fa0e3697b46e0db645c1bafd7cccd7e854416a7215f9",
+          "linkedWithoutMetadata": "8c14eff1cadb58b2d181fa0e3697b46e0db645c1bafd7cccd7e854416a7215f9"
+        },
+        "inherit": [
+          "MockInterface"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "MockContract",
+            "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:105"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MockContract",
+              "label": "calldataMocks",
+              "type": "t_mapping(t_bytes32,t_bytes_storage)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:87"
+            },
+            {
+              "contract": "MockContract",
+              "label": "calldataMockTypes",
+              "type": "t_mapping(t_bytes_memory,t_enum(MockType)151)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:88"
+            },
+            {
+              "contract": "MockContract",
+              "label": "calldataExpectations",
+              "type": "t_mapping(t_bytes_memory,t_bytes_storage)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:89"
+            },
+            {
+              "contract": "MockContract",
+              "label": "calldataRevertMessage",
+              "type": "t_mapping(t_bytes_memory,t_string_storage)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:90"
+            },
+            {
+              "contract": "MockContract",
+              "label": "calldataInvocations",
+              "type": "t_mapping(t_bytes32,t_uint256)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:91"
+            },
+            {
+              "contract": "MockContract",
+              "label": "methodIdMocks",
+              "type": "t_mapping(t_bytes4,t_bytes4)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:93"
+            },
+            {
+              "contract": "MockContract",
+              "label": "methodIdMockTypes",
+              "type": "t_mapping(t_bytes4,t_enum(MockType)151)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:94"
+            },
+            {
+              "contract": "MockContract",
+              "label": "methodIdExpectations",
+              "type": "t_mapping(t_bytes4,t_bytes_storage)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:95"
+            },
+            {
+              "contract": "MockContract",
+              "label": "methodIdRevertMessages",
+              "type": "t_mapping(t_bytes4,t_string_storage)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:96"
+            },
+            {
+              "contract": "MockContract",
+              "label": "methodIdInvocations",
+              "type": "t_mapping(t_bytes32,t_uint256)",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:97"
+            },
+            {
+              "contract": "MockContract",
+              "label": "fallbackMockType",
+              "type": "t_enum(MockType)151",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:99"
+            },
+            {
+              "contract": "MockContract",
+              "label": "fallbackExpectation",
+              "type": "t_bytes_storage",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:100"
+            },
+            {
+              "contract": "MockContract",
+              "label": "fallbackRevertMessage",
+              "type": "t_string_storage",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:101"
+            },
+            {
+              "contract": "MockContract",
+              "label": "invocations",
+              "type": "t_uint256",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:102"
+            },
+            {
+              "contract": "MockContract",
+              "label": "resetCount",
+              "type": "t_uint256",
+              "src": "@gnosis.pm/mock-contract/contracts/MockContract.sol:103"
+            }
+          ],
+          "types": {
+            "t_mapping(t_bytes32,t_bytes_storage)": {
+              "label": "mapping(bytes32 => bytes)"
+            },
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_bytes_storage": {
+              "label": "bytes"
+            },
+            "t_mapping(t_bytes_memory,t_enum(MockType)151)": {
+              "label": "mapping(bytes => enum MockContract.MockType)"
+            },
+            "t_enum(MockType)151": {
+              "label": "enum MockContract.MockType",
+              "members": [
+                "Return",
+                "Revert",
+                "OutOfGas"
+              ]
+            },
+            "t_mapping(t_bytes_memory,t_bytes_storage)": {
+              "label": "mapping(bytes => bytes)"
+            },
+            "t_mapping(t_bytes_memory,t_string_storage)": {
+              "label": "mapping(bytes => string)"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_bytes4,t_bytes4)": {
+              "label": "mapping(bytes4 => bytes4)"
+            },
+            "t_bytes4": {
+              "label": "bytes4"
+            },
+            "t_mapping(t_bytes4,t_enum(MockType)151)": {
+              "label": "mapping(bytes4 => enum MockContract.MockType)"
+            },
+            "t_mapping(t_bytes4,t_bytes_storage)": {
+              "label": "mapping(bytes4 => bytes)"
+            },
+            "t_mapping(t_bytes4,t_string_storage)": {
+              "label": "mapping(bytes4 => string)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "MockInterface": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "GnosisSafe": {
+        "version": {
+          "withMetadata": "16e3c54f7f2607a5adc895755fca2b59ecfbf9038fbf49c1385cebab33d7473a",
+          "withoutMetadata": "a44a87da1f4638b6393576a640ad440419dd71a352010d33fd14cd7931d83a92",
+          "linkedWithoutMetadata": "a44a87da1f4638b6393576a640ad440419dd71a352010d33fd14cd7931d83a92"
+        },
+        "inherit": [
+          "FallbackManager",
+          "ISignatureValidatorConstants",
+          "SecuredTokenTransfer",
+          "SignatureDecoder",
+          "OwnerManager",
+          "ModuleManager",
+          "Executor",
+          "MasterCopy",
+          "SelfAuthorized"
+        ],
+        "libraries": [
+          "GnosisSafeMath"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "GnosisSafe",
+            "src": "contracts/GnosisSafe.sol:60"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "GnosisSafe",
+              "label": "nonce",
+              "type": "t_uint256",
+              "src": "contracts/GnosisSafe.sol:52"
+            },
+            {
+              "contract": "GnosisSafe",
+              "label": "domainSeparator",
+              "type": "t_bytes32",
+              "src": "contracts/GnosisSafe.sol:53"
+            },
+            {
+              "contract": "GnosisSafe",
+              "label": "signedMessages",
+              "type": "t_mapping(t_bytes32,t_uint256)",
+              "src": "contracts/GnosisSafe.sol:55"
+            },
+            {
+              "contract": "GnosisSafe",
+              "label": "approvedHashes",
+              "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))",
+              "src": "contracts/GnosisSafe.sol:57"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)"
+            },
+            "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+              "label": "mapping(address => mapping(bytes32 => uint256))"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Migrations": {
+        "version": {
+          "withMetadata": "4f637eaee9d7e154b00297e8233d4bf4a5665d6ea8a82942723e7b5625346f29",
+          "withoutMetadata": "fcfd037336501cf5bc8d5d33b376ec69ed8b2541ccce22fa7d9e82f18199751a",
+          "linkedWithoutMetadata": "fcfd037336501cf5bc8d5d33b376ec69ed8b2541ccce22fa7d9e82f18199751a"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Migrations",
+            "src": "contracts/Migrations.sol:11"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Migrations",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/Migrations.sol:4"
+            },
+            {
+              "contract": "Migrations",
+              "label": "last_completed_migration",
+              "type": "t_uint256",
+              "src": "contracts/Migrations.sol:5"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Executor": {
+        "version": {
+          "withMetadata": "b23c62e67a2cd54ec729e73dddcadf0a0ffff99167ae3d185d5128ebd92628ae",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "FallbackManager": {
+        "version": {
+          "withMetadata": "576f64b741308c944cb679c8f75081510c8f129936d8d75ef9d3af7ea5d5a198",
+          "withoutMetadata": "a2c6a1a5b04ca6bea2b02f3d722bc89917583c70d46a754f63b5c18a9a164999",
+          "linkedWithoutMetadata": "a2c6a1a5b04ca6bea2b02f3d722bc89917583c70d46a754f63b5c18a9a164999"
+        },
+        "inherit": [
+          "SelfAuthorized"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Module": {
+        "version": {
+          "withMetadata": "9d2552c65d98e1fe73517ed0596fb065783d7b0424f3f6f543458545dd497533",
+          "withoutMetadata": "e7343545e51bae166b9c15d4c7a961aff9c7c0cb826211b0975932282bc0cb15",
+          "linkedWithoutMetadata": "e7343545e51bae166b9c15d4c7a961aff9c7c0cb826211b0975932282bc0cb15"
+        },
+        "inherit": [
+          "MasterCopy",
+          "SelfAuthorized"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Module",
+              "label": "manager",
+              "type": "t_contract(ModuleManager)2678",
+              "src": "contracts/base/Module.sol:11"
+            }
+          ],
+          "types": {
+            "t_contract(ModuleManager)2678": {
+              "label": "contract ModuleManager"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ModuleManager": {
+        "version": {
+          "withMetadata": "5efe59455ee60ce5181eb01da2fd7714283a7c04706d28d8e8c1f67caad19854",
+          "withoutMetadata": "9359569f18abded958e0fb6d1807cd15c454e12996ab00861d7e86564a086156",
+          "linkedWithoutMetadata": "9359569f18abded958e0fb6d1807cd15c454e12996ab00861d7e86564a086156"
+        },
+        "inherit": [
+          "Executor",
+          "SelfAuthorized"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ModuleManager",
+              "label": "modules",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/base/ModuleManager.sol:20"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "OwnerManager": {
+        "version": {
+          "withMetadata": "339b7d4a933a60b1589a8945502518c3812dc88ab04641b70892539e4fb492f7",
+          "withoutMetadata": "76c748e84eba66c51d2ff6d255aa0fa1ed7a1f85083f1ed1e44f6e475d11fd49",
+          "linkedWithoutMetadata": "76c748e84eba66c51d2ff6d255aa0fa1ed7a1f85083f1ed1e44f6e475d11fd49"
+        },
+        "inherit": [
+          "SelfAuthorized"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnerManager",
+              "label": "owners",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/base/OwnerManager.sol:15"
+            },
+            {
+              "contract": "OwnerManager",
+              "label": "ownerCount",
+              "type": "t_uint256",
+              "src": "contracts/base/OwnerManager.sol:16"
+            },
+            {
+              "contract": "OwnerManager",
+              "label": "threshold",
+              "type": "t_uint256",
+              "src": "contracts/base/OwnerManager.sol:17"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Enum": {
+        "version": {
+          "withMetadata": "e9bec22eabb86b292b2677f789a9036ed6a49a645098fc23d909a7c67a603f99",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EtherPaymentFallback": {
+        "version": {
+          "withMetadata": "d51005eed912d374afce38437789392e90773a9209b3c8d8371d2f50dd2b6a54",
+          "withoutMetadata": "4bc3c0fd8bf918747650b3d91c00346c44ad823a23110ea359771c78cf573a4d",
+          "linkedWithoutMetadata": "4bc3c0fd8bf918747650b3d91c00346c44ad823a23110ea359771c78cf573a4d"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "MasterCopy": {
+        "version": {
+          "withMetadata": "e102c652e2944a1bb01bd7dd52a0ee24f91ca78d05799cd6b0ae70a5e9541668",
+          "withoutMetadata": "7938ded311262bbb7f2d278420ef4713b8da305c3e30922e27f516067bb2ccfe",
+          "linkedWithoutMetadata": "7938ded311262bbb7f2d278420ef4713b8da305c3e30922e27f516067bb2ccfe"
+        },
+        "inherit": [
+          "SelfAuthorized"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MasterCopy",
+              "label": "masterCopy",
+              "type": "t_address",
+              "src": "contracts/common/MasterCopy.sol:14"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "SecuredTokenTransfer": {
+        "version": {
+          "withMetadata": "74a43aa8af1b4539108c336a6780e6ecde4c9ce48152872f21ec669ef18d0ee6",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SelfAuthorized": {
+        "version": {
+          "withMetadata": "4b2ff40df1e46c5c793d8aaa68f4f21adeeadee21e31b73ae620b7671c171a1c",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SignatureDecoder": {
+        "version": {
+          "withMetadata": "b3dd685c1a08d4321cd80fad2c7b23e846a02ce8d2132531d78328dd5a57d9fe",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "GnosisSafeMath": {
+        "version": {
+          "withMetadata": "0a55d80377a36bd6d11c6212e594a6e495c8a05afba8cee2583836b84bc0484c",
+          "withoutMetadata": "24c6583df9609f81f64cb9d9d2c423fe43f9eae157b06e1a3aedf78fbd02d32c",
+          "linkedWithoutMetadata": "24c6583df9609f81f64cb9d9d2c423fe43f9eae157b06e1a3aedf78fbd02d32c"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "DefaultCallbackHandler": {
+        "version": {
+          "withMetadata": "2a8fed75de6239dec5f506609d5474683d51be1311d9d3b5f8ecbedada7d96b4",
+          "withoutMetadata": "e37867b396902dab79e437c315e42517a42e890ef6b4b14460dfb45950fe8667",
+          "linkedWithoutMetadata": "e37867b396902dab79e437c315e42517a42e890ef6b4b14460dfb45950fe8667"
+        },
+        "inherit": [
+          "ERC721TokenReceiver",
+          "ERC777TokensRecipient",
+          "ERC1155TokenReceiver"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155TokenReceiver": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721TokenReceiver": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC777TokensRecipient": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ISignatureValidator": {
+        "inherit": [
+          "ISignatureValidatorConstants"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ISignatureValidatorConstants": {
+        "version": {
+          "withMetadata": "3250edb665a3a2d25f7be8821d28a2b858011a3bbf65a503d48bdc8e94944376",
+          "withoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495",
+          "linkedWithoutMetadata": "92f1717632eb470b6bc25c303fe7e2aba8218faaf534ae84a3ac2f983d755495"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "CreateCall": {
+        "version": {
+          "withMetadata": "56cfd2c25d639107f7e7539cef4e4e11a06cb4147c9e4c6b0e577e73526c14d9",
+          "withoutMetadata": "327c361a05792478b8cc251a798729af508b0af1769d49627dda60ac47add916",
+          "linkedWithoutMetadata": "327c361a05792478b8cc251a798729af508b0af1769d49627dda60ac47add916"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "MultiSend": {
+        "version": {
+          "withMetadata": "b35e3904f5bbc516e1170162a9d7c26f27d8993e7a6c53e0b6b94845b8f59a3a",
+          "withoutMetadata": "6b160db1b7a22d3abec767fa0c68ac90f9c8cfac761f8f66ec6f9aa3d53d20c1",
+          "linkedWithoutMetadata": "6b160db1b7a22d3abec767fa0c68ac90f9c8cfac761f8f66ec6f9aa3d53d20c1"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "MultiSend",
+            "src": "contracts/libraries/MultiSend.sol:15"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MultiSend",
+              "label": "guard",
+              "type": "t_bytes32",
+              "src": "contracts/libraries/MultiSend.sol:13"
+            }
+          ],
+          "types": {
+            "t_bytes32": {
+              "label": "bytes32"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155Token": {
+        "version": {
+          "withMetadata": "ff83db2d47ea2ad6cce454b8a8d5bfeeccb87e63250439e1d92e3529eddc9912",
+          "withoutMetadata": "37f725f4ec209a3a75c8d3f1c21e6bec74defe8d05f0630676fe16bc2dff2cad",
+          "linkedWithoutMetadata": "37f725f4ec209a3a75c8d3f1c21e6bec74defe8d05f0630676fe16bc2dff2cad"
+        },
+        "inherit": [],
+        "libraries": [
+          "GnosisSafeMath"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC1155Token",
+              "label": "_balances",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+              "src": "contracts/mocks/ERC1155Token.sol:11"
+            },
+            {
+              "contract": "ERC1155Token",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "contracts/mocks/ERC1155Token.sol:14"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(uint256 => mapping(address => uint256))"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Token": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "DelegateConstructorProxy": {
+        "version": {
+          "withMetadata": "555a3f041bed1e8000a4bd04c9ce5212fd3ebf7e193f247435fc568c384397f4",
+          "withoutMetadata": "555a3f041bed1e8000a4bd04c9ce5212fd3ebf7e193f247435fc568c384397f4",
+          "linkedWithoutMetadata": "555a3f041bed1e8000a4bd04c9ce5212fd3ebf7e193f247435fc568c384397f4"
+        },
+        "inherit": [
+          "GnosisSafeProxy"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "DelegateConstructorProxy",
+            "src": "contracts/proxies/DelegateConstructorProxy.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "GnosisSafeProxy": {
+        "version": {
+          "withMetadata": "d3a30482030d29aba9c806611ee7948a5ac4cdcd2ef08ce11026d10f5da0eeb0",
+          "withoutMetadata": "d3a30482030d29aba9c806611ee7948a5ac4cdcd2ef08ce11026d10f5da0eeb0",
+          "linkedWithoutMetadata": "d3a30482030d29aba9c806611ee7948a5ac4cdcd2ef08ce11026d10f5da0eeb0"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "GnosisSafeProxy",
+            "src": "contracts/proxies/GnosisSafeProxy.sol:20"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "GnosisSafeProxy",
+              "label": "masterCopy",
+              "type": "t_address",
+              "src": "contracts/proxies/GnosisSafeProxy.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IProxy": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "GnosisSafeProxyFactory": {
+        "version": {
+          "withMetadata": "b378d006baee28f848fb98712fee71c507ab2755519a38eff8715d40bda8430a",
+          "withoutMetadata": "e60da2256f3336a1455087193791af8433f578006a6773a8f9bf0b8304d2d2e2",
+          "linkedWithoutMetadata": "e60da2256f3336a1455087193791af8433f578006a6773a8f9bf0b8304d2d2e2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IProxyCreationCallback": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PayingProxy": {
+        "version": {
+          "withMetadata": "49c91a2813654fd64baee8d8bc04416237cf46e73c1214dddcb8f1738d3b5881",
+          "withoutMetadata": "49c91a2813654fd64baee8d8bc04416237cf46e73c1214dddcb8f1738d3b5881",
+          "linkedWithoutMetadata": "49c91a2813654fd64baee8d8bc04416237cf46e73c1214dddcb8f1738d3b5881"
+        },
+        "inherit": [
+          "SecuredTokenTransfer",
+          "DelegateConstructorProxy",
+          "GnosisSafeProxy"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PayingProxy",
+            "src": "contracts/proxies/PayingProxy.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

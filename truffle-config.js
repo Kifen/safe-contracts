@@ -11,6 +11,20 @@ module.exports = {
       port: 8545,
       network_id: "*" // Match any network id
     },
+    bsctestnet: {
+      provider: () => {
+        return new HDWalletProvider(mnemonic, 'https://data-seed-prebsc-1-s1.binance.org:8545')
+      },
+      network_id: '97',
+      gasPrice: 25000000000, // 25 Gwei
+    },
+    bsctmainnet: {
+      provider: () => {
+        return new HDWalletProvider(mnemonic, 'https://bsc-dataseed.binance.org/')
+      },
+      network_id: '56',
+      gasPrice: 25000000000, // 25 Gwei
+    },
     rinkeby: {
       provider: () => {
         return new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/' + token)

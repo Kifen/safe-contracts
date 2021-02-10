@@ -1,0 +1,1038 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/base/Executor.sol": {
+      "lastModificationDate": 1612941482055,
+      "contentHash": "91550d4464c25f2745208cfbc96a4e86",
+      "sourceName": "contracts/base/Executor.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/Enum.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Executor"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/Enum.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "cc6fb3077de74cb840846eced1fd740c",
+      "sourceName": "contracts/common/Enum.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Enum"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/base/ModuleManager.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "3b67dd28b4cfdf7a0c53c1437554ed49",
+      "sourceName": "contracts/base/ModuleManager.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/Enum.sol",
+        "../common/SelfAuthorized.sol",
+        "./Executor.sol",
+        "./Module.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ModuleManager"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/SelfAuthorized.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "dbb0bc5d93c775f39a7ac5a29504f56e",
+      "sourceName": "contracts/common/SelfAuthorized.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "SelfAuthorized"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/base/Module.sol": {
+      "lastModificationDate": 1612941482055,
+      "contentHash": "73ee346ed160b52d12151ed2fae739fd",
+      "sourceName": "contracts/base/Module.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/MasterCopy.sol",
+        "./ModuleManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Module"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/MasterCopy.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "681cc785e299fa5493c257a3ac997476",
+      "sourceName": "contracts/common/MasterCopy.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "MasterCopy"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/GnosisSafe.sol": {
+      "lastModificationDate": 1612941482055,
+      "contentHash": "526235fbd47437fca2bdeb90e82c3a9a",
+      "sourceName": "contracts/GnosisSafe.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./base/ModuleManager.sol",
+        "./base/OwnerManager.sol",
+        "./base/FallbackManager.sol",
+        "./common/MasterCopy.sol",
+        "./common/SignatureDecoder.sol",
+        "./common/SecuredTokenTransfer.sol",
+        "./interfaces/ISignatureValidator.sol",
+        "./external/GnosisSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "GnosisSafe"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/base/OwnerManager.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "04f2478ac7f6a548d0a3e29346165812",
+      "sourceName": "contracts/base/OwnerManager.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "OwnerManager"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/base/FallbackManager.sol": {
+      "lastModificationDate": 1612941482055,
+      "contentHash": "817013ed0104243bd5853e47a7af4b6a",
+      "sourceName": "contracts/base/FallbackManager.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "FallbackManager"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/SignatureDecoder.sol": {
+      "lastModificationDate": 1612941482057,
+      "contentHash": "6248aeeb39579c34148346e7f03fc2fe",
+      "sourceName": "contracts/common/SignatureDecoder.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "SignatureDecoder"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/SecuredTokenTransfer.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "3897df1650d69173f3568d9b50f916be",
+      "sourceName": "contracts/common/SecuredTokenTransfer.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "SecuredTokenTransfer"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+      "lastModificationDate": 1612941482058,
+      "contentHash": "29d211f5dfff296bc91723c78c37ef00",
+      "sourceName": "contracts/interfaces/ISignatureValidator.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ISignatureValidator",
+        "ISignatureValidatorConstants"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/external/GnosisSafeMath.sol": {
+      "lastModificationDate": 1612941482057,
+      "contentHash": "fe3a38e5123698691fd9e5cf192cc7d1",
+      "sourceName": "contracts/external/GnosisSafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "GnosisSafeMath"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/mocks/ERC1155Token.sol": {
+      "lastModificationDate": 1612941482059,
+      "contentHash": "3086bd8923a4f29f39753d2dd8932131",
+      "sourceName": "contracts/mocks/ERC1155Token.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ERC1155TokenReceiver.sol",
+        "../external/GnosisSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Token"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/interfaces/ERC1155TokenReceiver.sol": {
+      "lastModificationDate": 1612941482057,
+      "contentHash": "88606cb535886d62a15def4348423cfe",
+      "sourceName": "contracts/interfaces/ERC1155TokenReceiver.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155TokenReceiver"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/handler/DefaultCallbackHandler.sol": {
+      "lastModificationDate": 1612941482057,
+      "contentHash": "b27de7321fdb4275b95215004f3bff48",
+      "sourceName": "contracts/handler/DefaultCallbackHandler.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ERC1155TokenReceiver.sol",
+        "../interfaces/ERC721TokenReceiver.sol",
+        "../interfaces/ERC777TokensRecipient.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "DefaultCallbackHandler"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/interfaces/ERC721TokenReceiver.sol": {
+      "lastModificationDate": 1612941482058,
+      "contentHash": "b85cd392da8f7b5965a1bcb802d4ddd6",
+      "sourceName": "contracts/interfaces/ERC721TokenReceiver.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ERC721TokenReceiver"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/interfaces/ERC777TokensRecipient.sol": {
+      "lastModificationDate": 1612941482058,
+      "contentHash": "bb4017e721f0d98401b03ee7522c82d3",
+      "sourceName": "contracts/interfaces/ERC777TokensRecipient.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ERC777TokensRecipient"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/proxies/PayingProxy.sol": {
+      "lastModificationDate": 1612941482060,
+      "contentHash": "9dc0abeb3b1353c7ba23cd3855f9f21c",
+      "sourceName": "contracts/proxies/PayingProxy.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/SecuredTokenTransfer.sol",
+        "./DelegateConstructorProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "PayingProxy"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/proxies/DelegateConstructorProxy.sol": {
+      "lastModificationDate": 1612941482059,
+      "contentHash": "a1789f7b172f6c26507c32c2c07da50e",
+      "sourceName": "contracts/proxies/DelegateConstructorProxy.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GnosisSafeProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "DelegateConstructorProxy"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/proxies/GnosisSafeProxy.sol": {
+      "lastModificationDate": 1612941482059,
+      "contentHash": "4f0a0d66aeea7b832ac5a9f800541a3b",
+      "sourceName": "contracts/proxies/GnosisSafeProxy.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "GnosisSafeProxy",
+        "IProxy"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
+      "lastModificationDate": 1612941482060,
+      "contentHash": "c4785b79566f0f19011ff1ff25b921ae",
+      "sourceName": "contracts/proxies/IProxyCreationCallback.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GnosisSafeProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.3"
+      ],
+      "artifacts": [
+        "IProxyCreationCallback"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol": {
+      "lastModificationDate": 1612941482060,
+      "contentHash": "754b6fcd156a33d477b5ace6b12c5b9b",
+      "sourceName": "contracts/proxies/GnosisSafeProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GnosisSafeProxy.sol",
+        "./IProxyCreationCallback.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.3"
+      ],
+      "artifacts": [
+        "GnosisSafeProxyFactory"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/common/EtherPaymentFallback.sol": {
+      "lastModificationDate": 1612941482056,
+      "contentHash": "beb7aaac7a991c5340a8727253b98757",
+      "sourceName": "contracts/common/EtherPaymentFallback.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "EtherPaymentFallback"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/libraries/CreateCall.sol": {
+      "lastModificationDate": 1612941482058,
+      "contentHash": "8d35a977c924158787f7671cc2aee329",
+      "sourceName": "contracts/libraries/CreateCall.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "CreateCall"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/libraries/MultiSend.sol": {
+      "lastModificationDate": 1612941482058,
+      "contentHash": "9007984eff78e9b32a4feb09189f393d",
+      "sourceName": "contracts/libraries/MultiSend.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "MultiSend"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/Migrations.sol": {
+      "lastModificationDate": 1612941482055,
+      "contentHash": "d6990cbbbca7706f1e3cb5c37ce2a795",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/contracts/mocks/Token.sol": {
+      "lastModificationDate": 1612941482059,
+      "contentHash": "c66b1ba996a5fc6415d3423c39b789a8",
+      "sourceName": "contracts/mocks/Token.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@gnosis.pm/mock-contract/contracts/MockContract.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/Users/kifenaseme/Dev/buycoins/safe-contracts/node_modules/@gnosis.pm/mock-contract/contracts/MockContract.sol": {
+      "lastModificationDate": 1612941522765,
+      "contentHash": "eba235f858625fbbb19b2edf26d66ec9",
+      "sourceName": "@gnosis.pm/mock-contract/contracts/MockContract.sol",
+      "solcConfig": {
+        "version": "0.5.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "MockContract",
+        "MockInterface"
+      ]
+    }
+  }
+}
